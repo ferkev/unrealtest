@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Friendly
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
@@ -38,6 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
+  - name: Friendly
     uniqueID: 0
     locked: 0
