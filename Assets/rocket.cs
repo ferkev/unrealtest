@@ -24,11 +24,34 @@ public class rocket : MonoBehaviour {
         GetInput();
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        //print("Collided");
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                {
+                    print("Ok");
+                }
+                break;
+            case "Finished":
+                {
+                    print("level accomplished");
+                }
+                break;
+            default:
+                {
+                    print("Dead");
+                }
+                break;
+        }
+    }
+
+
     private void GetInput()
     {
         Thrust();
         Rotate();
-
     }
 
     private void Thrust()
@@ -39,7 +62,6 @@ public class rocket : MonoBehaviour {
  
             if (!audioSource.isPlaying)
             {
-                
                 audioSource.Play();
             }
 
